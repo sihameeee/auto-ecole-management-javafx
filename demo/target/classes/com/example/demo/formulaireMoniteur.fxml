@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="455.0" stylesheets="@dashboardDesign.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MoniteurController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="7.0" prefHeight="425.0" prefWidth="435.0" styleClass="white-bg" stylesheets="@../../../../../../target/classes/com/example/demo/dashboardDesign.css">
+         <children>
+            <Button fx:id="confirmerm" layoutX="102.0" layoutY="314.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="30.0" prefWidth="100.0" styleClass="logout" stylesheets="@../../../../../../target/classes/com/example/demo/dashboardDesign.css" text="Confirmer" textFill="WHITE" />
+            <Button fx:id="annulerm" layoutX="233.0" layoutY="314.0" mnemonicParsing="false" onAction="#annuler" prefHeight="30.0" prefWidth="100.0" styleClass="delete-btn" stylesheets="@dashboardDesign.css" text="Annuler" />
+            <Label layoutX="227.0" layoutY="113.0" text="Mot de passe" />
+            <Label layoutX="25.0" layoutY="113.0" text="Nom d'utilisateur" />
+            <Label layoutX="27.0" layoutY="171.0" text="Role" />
+            <Label layoutX="227.0" layoutY="58.0" text="Prenom" />
+            <Label layoutX="25.0" layoutY="57.0" text="Nom" />
+            <Label layoutX="228.0" layoutY="172.0" text="Disponibilite" />
+            <TextField fx:id="nomm" layoutX="25.0" layoutY="75.0" />
+            <TextField fx:id="prenomm" layoutX="227.0" layoutY="75.0" />
+            <TextField fx:id="usernamem" layoutX="25.0" layoutY="131.0" />
+            <TextField fx:id="passwordm" layoutX="228.0" layoutY="131.0" />
+            <Label layoutX="98.0" layoutY="10.0" stylesheets="@dashboardDesign.css" text="INFORMATIONS DU MONITEUR">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="rolem" layoutX="26.0" layoutY="189.0" prefHeight="25.0" prefWidth="175.0" stylesheets="@../../../../../../target/classes/com/example/demo/dashboardDesign.css">
+               <effect>
+                  <Blend />
+               </effect>
+            </ChoiceBox>
+            <ChoiceBox fx:id="disponibilitem" layoutX="229.0" layoutY="189.0" prefHeight="25.0" prefWidth="175.0" stylesheets="@../../../../../../target/classes/com/example/demo/dashboardDesign.css">
+               <effect>
+                  <Blend />
+               </effect>
+            </ChoiceBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <styleClass>
+      <String fx:value="shadow" />
+      <String fx:value="nav-btn" />
+   </styleClass>
+</AnchorPane>
