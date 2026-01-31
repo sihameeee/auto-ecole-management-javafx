@@ -1,4 +1,4 @@
-# 🚗 Application de Gestion d’Auto-École (GAE)
+#Application Desktop de Gestion d’Auto-École (JavaFX)
 
 Application desktop développée en **JavaFX** pour automatiser et centraliser la gestion d’une auto-école : candidats, moniteurs, véhicules, séances, examens et paiements.
 
